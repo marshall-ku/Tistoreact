@@ -1,263 +1,263 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="[##_desc_##]" />
-    <title>[##_page_title_##]</title>
-    <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
-    <meta name="description" content="[##_desc_##]" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="[##_title_##]"
-      href="[##_rss_url_##]"
-    />
-    <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script>
-      /*<!--*/
-      window.data = {
-        bodyId: `[##_body_id_##]`,
-        info: {
-          title: `[##_title_##]`,
-          image: `[##_image_##]`,
-          description: `[##_desc_##]`,
-          blogger: `[##_blogger_##]`,
-          link: `[##_blog_link_##]`,
-        },
-        visitors: {
-          total: '[##_count_total_##]',
-          today: '[##_count_today_##]',
-          yesterday: '[##_count_yesterday_##]',
-        },
-        owner: {
-          url: '[##_owner_url_##]',
-          post: '[##_owner_url_##]/entry/post',
-        },
-        title: `[##_page_title_##]`,
-        /* <s_guest> */
-        guestbook: {
-          textarea: {
-            /* <s_guest_input_form><s_guest_member><s_guest_form> */
-            guest_input_name: `[##_guest_input_name_##]`,
-            guest_name: `[##_guest_name_##]`,
-            guest_input_password: `[##_guest_input_password_##]`,
-            guest_password: `[##_guest_password_##]`,
-            /* </s_guest_form></s_guest_member> */
-            textarea_body: `[##_guest_textarea_body_##]`,
-            onclick: `[##_guest_onclick_submit_##]`,
-            /* </s_guest_input_form> */
-          },
-          list: [
-            /* <s_guest_container><s_guest_rep> */
-            {
-              id: `[##_guest_rep_id_##]`,
-              class: `[##_guest_rep_class_##]`,
-              name: `[##_guest_rep_name_##]`,
-              date: `[##_guest_rep_date_##]`,
-              description: `[##_guest_rep_desc_##]`,
-              onclick: {
-                reply: `[##_guest_rep_onclick_reply_##]`,
-                delete: `[##_guest_rep_onclick_delete_##]`,
-              },
-              children: [
-                /* <s_guest_reply_container><s_guest_reply_rep> */
-                {
-                  id: `[##_guest_rep_id_##]`,
-                  class: `[##_guest_rep_class_##]`,
-                  name: `[##_guest_rep_name_##]`,
-                  date: `[##_guest_rep_date_##]`,
-                  description: `[##_guest_rep_desc_##]`,
-                  onclick: {
-                    delete: `[##_guest_rep_onclick_delete_##]`,
-                  },
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="[##_desc_##]" />
+        <title>[##_page_title_##]</title>
+        <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
+        <meta name="description" content="[##_desc_##]" />
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="[##_title_##]"
+            href="[##_rss_url_##]"
+        />
+        <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <script>
+            /*<!--*/
+            window.data = {
+                bodyId: `[##_body_id_##]`,
+                info: {
+                    title: `[##_title_##]`,
+                    image: `[##_image_##]`,
+                    description: `[##_desc_##]`,
+                    blogger: `[##_blogger_##]`,
+                    link: `[##_blog_link_##]`,
                 },
-                /* </s_guest_reply_rep></s_guest_reply_container> */
-              ],
-            },
-            /* </s_guest_rep></s_guest_container> */
-          ],
-        },
-        /* </s_guest>
-          <s_list> */
-        list: {
-          conformance: '[##_list_conform_##]',
-          count: '[##_list_count_##]',
-          image: '<s_list_image>[##_list_image_##]</s_list_image>',
-          description: `[##_list_description_##]`,
-          style: `[##_list_style_##]`,
-          articles: [
-            /* <s_list_rep> */
-            {
-              link: '[##_list_rep_link_##]',
-              regDate: `[##_list_rep_regdate_##]`,
-              commentsCount: `[##_list_rep_rp_cnt_##]`,
-              thumbnail:
-                '<s_list_rep_thumbnail>[##_list_rep_thumbnail_##]</s_list_rep_thumbnail>',
-            },
-            /* </s_list_rep> */
-          ],
-        },
-        /* </s_list>
-          <s_tag> */
-        tags: [
-          /* <s_tag_rep> */
-          {
-            link: `[##_tag_link_##]`,
-            class: `[##_tag_class_##]`,
-            name: `[##_tag_name_##]`,
-          },
-          /* </s_tag_rep> */
-        ],
-        /* </s_tag> */
-        article: {
-          /* <s_article_rep>
-              <s_permalink_article_rep> */
-          link: '[##_article_rep_link_##]',
-          title: `[##_article_rep_title_##]`,
-          category: {
-            name: `[##_article_rep_category_##]`,
-            link: `[##_article_rep_category_link_##]`,
-          },
-          regDate: `[##_article_rep_date_##]`,
-          author: `[##_article_rep_author_##]`,
-          description: `[##_article_rep_desc_##]`,
-          thumbnail: `<s_article_rep_thumbnail>[##_article_rep_thumbnail_raw_url_##]</s_article_rep_thumbnail>`,
-          commentsCount: `<s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>`,
-          comments: {
-            /* <s_rp><!-- */
-            textarea: {
-              /* <s_rp_input_form><s_rp_member><s_rp_guest> */
-              guest_input_name: `[##_rp_input_name_##]`,
-              guest_name: `[##_guest_name_##]`,
-              guest_input_password: `[##_rp_input_password_##]`,
-              guest_password: `[##_rp_admin_check_##]`,
-              /* </s_rp_guest></s_rp_member> */
-              textarea_body: `[##_rp_input_comment_##]`,
-              isSecret: `[##_rp_input_is_secret_##]`,
-              onclick: `[##_rp_onclick_submit_##]`,
-              /* </s_rp_input_form> */
-            },
-            list: [
-              /* <s_rp_container><s_rp_rep> */
-              {
-                id: `[##_rp_rep_id_##]`,
-                class: `[##_rp_rep_class_##]`,
-                name: `[##_rp_rep_name_##]`,
-                logo: `[##_rp_rep_logo_##]`,
-                date: `[##_rp_rep_date_##]`,
-                description: `[##_rp_rep_desc_##]`,
-                onclick: {
-                  reply: `[##_rp_rep_onclick_reply_##]`,
-                  delete: `[##_rp_rep_onclick_delete_##]`,
+                visitors: {
+                    total: "[##_count_total_##]",
+                    today: "[##_count_today_##]",
+                    yesterday: "[##_count_yesterday_##]",
                 },
-                children: [
-                  /* <s_rp2_container><s_rp2_rep> */
-                  {
-                    id: `[##_rp_rep_id_##]`,
-                    class: `[##_rp_rep_class_##]`,
-                    name: `[##_rp_rep_name_##]`,
-                    logo: `[##_rp_rep_logo_##]`,
-                    date: `[##_rp_rep_date_##]`,
-                    description: `[##_rp_rep_desc_##]`,
-                    onclick: {
-                      delete: `[##_rp_rep_onclick_delete_##]`,
+                owner: {
+                    url: "[##_owner_url_##]",
+                    post: "[##_owner_url_##]/entry/post",
+                },
+                title: `[##_page_title_##]`,
+                /* <s_guest> */
+                guestbook: {
+                    textarea: {
+                        /* <s_guest_input_form><s_guest_member><s_guest_form> */
+                        guest_input_name: `[##_guest_input_name_##]`,
+                        guest_name: `[##_guest_name_##]`,
+                        guest_input_password: `[##_guest_input_password_##]`,
+                        guest_password: `[##_guest_password_##]`,
+                        /* </s_guest_form></s_guest_member> */
+                        textarea_body: `[##_guest_textarea_body_##]`,
+                        onclick: `[##_guest_onclick_submit_##]`,
+                        /* </s_guest_input_form> */
                     },
-                  },
-                  /* </s_rp2_rep></s_rp2_container> */
+                    list: [
+                        /* <s_guest_container><s_guest_rep> */
+                        {
+                            id: `[##_guest_rep_id_##]`,
+                            class: `[##_guest_rep_class_##]`,
+                            name: `[##_guest_rep_name_##]`,
+                            date: `[##_guest_rep_date_##]`,
+                            description: `[##_guest_rep_desc_##]`,
+                            onclick: {
+                                reply: `[##_guest_rep_onclick_reply_##]`,
+                                delete: `[##_guest_rep_onclick_delete_##]`,
+                            },
+                            children: [
+                                /* <s_guest_reply_container><s_guest_reply_rep> */
+                                {
+                                    id: `[##_guest_rep_id_##]`,
+                                    class: `[##_guest_rep_class_##]`,
+                                    name: `[##_guest_rep_name_##]`,
+                                    date: `[##_guest_rep_date_##]`,
+                                    description: `[##_guest_rep_desc_##]`,
+                                    onclick: {
+                                        delete: `[##_guest_rep_onclick_delete_##]`,
+                                    },
+                                },
+                                /* </s_guest_reply_rep></s_guest_reply_container> */
+                            ],
+                        },
+                        /* </s_guest_rep></s_guest_container> */
+                    ],
+                },
+                /* </s_guest>
+          <s_list> */
+                list: {
+                    conformance: "[##_list_conform_##]",
+                    count: "[##_list_count_##]",
+                    image: "<s_list_image>[##_list_image_##]</s_list_image>",
+                    description: `[##_list_description_##]`,
+                    style: `[##_list_style_##]`,
+                    articles: [
+                        /* <s_list_rep> */
+                        {
+                            link: "[##_list_rep_link_##]",
+                            regDate: `[##_list_rep_regdate_##]`,
+                            commentsCount: `[##_list_rep_rp_cnt_##]`,
+                            thumbnail:
+                                "<s_list_rep_thumbnail>[##_list_rep_thumbnail_##]</s_list_rep_thumbnail>",
+                        },
+                        /* </s_list_rep> */
+                    ],
+                },
+                /* </s_list>
+          <s_tag> */
+                tags: [
+                    /* <s_tag_rep> */
+                    {
+                        link: `[##_tag_link_##]`,
+                        class: `[##_tag_class_##]`,
+                        name: `[##_tag_name_##]`,
+                    },
+                    /* </s_tag_rep> */
                 ],
-              },
-              /* </s_rp_rep></s_rp_container> */
-            ],
-            /* </s_rp>--> */
-          },
-          /* </s_permalink_article_rep> */
-          /* <s_notice_rep> */
-          isNotice: true,
-          title: `[##_notice_rep_title_##]`,
-          date: `[##_notice_rep_date_##]`,
-          description: `[##_notice_rep_desc_##]`,
-          /* </s_notice_rep> */
-          /* </s_article_rep> */
-        },
-        side: {
-          recentArticles: [
-            /* <s_rctps_rep> */
-            {
-              link: '[##_rctps_rep_link_##]',
-              title: '[##_rctps_rep_title_##]',
-              category: {
-                name: `[##_rctps_rep_category_##]`,
-                link: `[##_rctps_rep_category_link_##]`,
-              },
-              regDate: '[##_rctps_rep_date_##]',
-              commentsCount: `[##_rctps_rep_rp_cnt_##]`,
-              thumbnail:
-                '<s_rctps_rep_thumbnail>[##_rctps_rep_thumbnail_##]</s_rctps_rep_thumbnail>',
-            },
-            /* </s_rctps_rep> */
-          ],
-          recentComments: [
-            /* <s_rctrp_rep> */
-            {
-              link: '[##_rctrp_rep_link_##]',
-              description: `[##_rctrp_rep_desc_##]`,
-              name: `[##_rctrp_rep_name_##]`,
-              regDate: '[##_rctrp_rep_time_##]',
-            },
-            /* </s_rctrp_rep> */
-          ],
-          popularArticles: [
-            /* <s_rctps_popular_rep> */
-            {
-              link: '[##_rctps_rep_link_##]',
-              title: '[##_rctps_rep_title_##]',
-              category: {
-                name: `[##_rctps_rep_category_##]`,
-                link: `[##_rctps_rep_category_link_##]`,
-              },
-              regDate: '[##_rctps_rep_date_##]',
-              commentsCount: `[##_rctps_rep_rp_cnt_##]`,
-              thumbnail:
-                '<s_rctps_rep_thumbnail>[##_rctps_rep_thumbnail_##]</s_rctps_rep_thumbnail>',
-            },
-            /* </s_rctps_popular_rep> */
-          ],
-        },
-        /* <s_paging> */
-        paging: {
-          previous: {
-            page: `[##_prev_page_##]`,
-            noMore: `[##_no_more_prev_##]`,
-          },
-          next: {
-            page: `[##_next_page_##]`,
-            noMore: `[##_no_more_next_##]`,
-          },
-          list: [
-            /* <s_paging_rep> */
-            {
-              link: `[##_paging_rep_link_##]`,
-              num: `[##_paging_rep_link_num_##]`,
-            },
-            /* </s_paging_rep> */
-          ],
-        },
-        /* </s_paging> */
-      };
-      /*-->*/
-    </script>
-    <script type="module" src="/dist/index.js"></script>
-  </body>
+                /* </s_tag> */
+                article: {
+                    /* <s_article_rep>
+              <s_permalink_article_rep> */
+                    link: "[##_article_rep_link_##]",
+                    title: `[##_article_rep_title_##]`,
+                    category: {
+                        name: `[##_article_rep_category_##]`,
+                        link: `[##_article_rep_category_link_##]`,
+                    },
+                    regDate: `[##_article_rep_date_##]`,
+                    author: `[##_article_rep_author_##]`,
+                    description: `[##_article_rep_desc_##]`,
+                    thumbnail: `<s_article_rep_thumbnail>[##_article_rep_thumbnail_raw_url_##]</s_article_rep_thumbnail>`,
+                    commentsCount: `<s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>`,
+                    comments: {
+                        /* <s_rp><!-- */
+                        textarea: {
+                            /* <s_rp_input_form><s_rp_member><s_rp_guest> */
+                            guest_input_name: `[##_rp_input_name_##]`,
+                            guest_name: `[##_guest_name_##]`,
+                            guest_input_password: `[##_rp_input_password_##]`,
+                            guest_password: `[##_rp_admin_check_##]`,
+                            /* </s_rp_guest></s_rp_member> */
+                            textarea_body: `[##_rp_input_comment_##]`,
+                            isSecret: `[##_rp_input_is_secret_##]`,
+                            onclick: `[##_rp_onclick_submit_##]`,
+                            /* </s_rp_input_form> */
+                        },
+                        list: [
+                            /* <s_rp_container><s_rp_rep> */
+                            {
+                                id: `[##_rp_rep_id_##]`,
+                                class: `[##_rp_rep_class_##]`,
+                                name: `[##_rp_rep_name_##]`,
+                                logo: `[##_rp_rep_logo_##]`,
+                                date: `[##_rp_rep_date_##]`,
+                                description: `[##_rp_rep_desc_##]`,
+                                onclick: {
+                                    reply: `[##_rp_rep_onclick_reply_##]`,
+                                    delete: `[##_rp_rep_onclick_delete_##]`,
+                                },
+                                children: [
+                                    /* <s_rp2_container><s_rp2_rep> */
+                                    {
+                                        id: `[##_rp_rep_id_##]`,
+                                        class: `[##_rp_rep_class_##]`,
+                                        name: `[##_rp_rep_name_##]`,
+                                        logo: `[##_rp_rep_logo_##]`,
+                                        date: `[##_rp_rep_date_##]`,
+                                        description: `[##_rp_rep_desc_##]`,
+                                        onclick: {
+                                            delete: `[##_rp_rep_onclick_delete_##]`,
+                                        },
+                                    },
+                                    /* </s_rp2_rep></s_rp2_container> */
+                                ],
+                            },
+                            /* </s_rp_rep></s_rp_container> */
+                        ],
+                        /* </s_rp>--> */
+                    },
+                    /* </s_permalink_article_rep> */
+                    /* <s_notice_rep> */
+                    isNotice: true,
+                    title: `[##_notice_rep_title_##]`,
+                    date: `[##_notice_rep_date_##]`,
+                    description: `[##_notice_rep_desc_##]`,
+                    /* </s_notice_rep> */
+                    /* </s_article_rep> */
+                },
+                side: {
+                    recentArticles: [
+                        /* <s_rctps_rep> */
+                        {
+                            link: "[##_rctps_rep_link_##]",
+                            title: "[##_rctps_rep_title_##]",
+                            category: {
+                                name: `[##_rctps_rep_category_##]`,
+                                link: `[##_rctps_rep_category_link_##]`,
+                            },
+                            regDate: "[##_rctps_rep_date_##]",
+                            commentsCount: `[##_rctps_rep_rp_cnt_##]`,
+                            thumbnail:
+                                "<s_rctps_rep_thumbnail>[##_rctps_rep_thumbnail_##]</s_rctps_rep_thumbnail>",
+                        },
+                        /* </s_rctps_rep> */
+                    ],
+                    recentComments: [
+                        /* <s_rctrp_rep> */
+                        {
+                            link: "[##_rctrp_rep_link_##]",
+                            description: `[##_rctrp_rep_desc_##]`,
+                            name: `[##_rctrp_rep_name_##]`,
+                            regDate: "[##_rctrp_rep_time_##]",
+                        },
+                        /* </s_rctrp_rep> */
+                    ],
+                    popularArticles: [
+                        /* <s_rctps_popular_rep> */
+                        {
+                            link: "[##_rctps_rep_link_##]",
+                            title: "[##_rctps_rep_title_##]",
+                            category: {
+                                name: `[##_rctps_rep_category_##]`,
+                                link: `[##_rctps_rep_category_link_##]`,
+                            },
+                            regDate: "[##_rctps_rep_date_##]",
+                            commentsCount: `[##_rctps_rep_rp_cnt_##]`,
+                            thumbnail:
+                                "<s_rctps_rep_thumbnail>[##_rctps_rep_thumbnail_##]</s_rctps_rep_thumbnail>",
+                        },
+                        /* </s_rctps_popular_rep> */
+                    ],
+                },
+                /* <s_paging> */
+                paging: {
+                    previous: {
+                        page: `[##_prev_page_##]`,
+                        noMore: `[##_no_more_prev_##]`,
+                    },
+                    next: {
+                        page: `[##_next_page_##]`,
+                        noMore: `[##_no_more_next_##]`,
+                    },
+                    list: [
+                        /* <s_paging_rep> */
+                        {
+                            link: `[##_paging_rep_link_##]`,
+                            num: `[##_paging_rep_link_num_##]`,
+                        },
+                        /* </s_paging_rep> */
+                    ],
+                },
+                /* </s_paging> */
+            };
+            /*-->*/
+        </script>
+        <script type="module" src="/dist/index.js"></script>
+    </body>
 </html>
