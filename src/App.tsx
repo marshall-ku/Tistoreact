@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./router/Home";
+import Guestbook from "./router/Guestbook";
 import LocationUpdater from "./components/LocationUpdater";
 import "./App.css";
 
@@ -31,12 +32,13 @@ export default function App() {
             <header>
                 <h1>{data.title}</h1>
             </header>
-            <main>
-                <BrowserRouter basename="/">
+            <BrowserRouter basename="/">
+                <main>
                     <Route exact path={"/"} component={Home} />
+                    <Route exact path={"/guestbook"} component={Guestbook} />
                     <LocationUpdater />
-                </BrowserRouter>
-            </main>
+                </main>
+            </BrowserRouter>
             <footer>
                 <p>Made with 💜 by {data.info.blogger}</p>
             </footer>
