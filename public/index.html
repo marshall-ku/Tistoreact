@@ -25,7 +25,7 @@
     <body>
         <div id="root"></div>
         <noscript>You need to enable JavaScript to run this app.</noscript>
-        <script>
+        <script id="blog-data">
             /*<!--*/
             window.data = {
                 bodyId: `[##_body_id_##]`,
@@ -90,7 +90,7 @@
                     ],
                 },
                 /* </s_guest>
-          <s_list> */
+            <s_list> */
                 list: {
                     conformance: "[##_list_conform_##]",
                     count: "[##_list_count_##]",
@@ -110,12 +110,13 @@
                             commentsCount: `[##_list_rep_rp_cnt_##]`,
                             thumbnail:
                                 "<s_list_rep_thumbnail>[##_list_rep_thumbnail_##]</s_list_rep_thumbnail>",
+                            summary: "[##_list_rep_summary_##]",
                         },
                         /* </s_list_rep> */
                     ],
                 },
                 /* </s_list>
-          <s_tag> */
+            <s_tag> */
                 tags: [
                     /* <s_tag_rep> */
                     {
@@ -128,7 +129,7 @@
                 /* </s_tag> */
                 article: {
                     /* <s_article_rep>
-              <s_permalink_article_rep> */
+                <s_permalink_article_rep> */
                     link: "[##_article_rep_link_##]",
                     title: `[##_article_rep_title_##]`,
                     category: {
@@ -186,6 +187,41 @@
                             /* </s_rp_rep></s_rp_container> */
                         ],
                         /* </s_rp>--> */
+                    },
+                    /* <s_tag_label> */
+                    tags: `[##_tag_label_rep_##]`,
+                    /* </s_tag_label> */
+                    more: {
+                        /* <s_article_related>  */
+                        related: [
+                            /* <s_article_related_rep> */
+                            {
+                                link: "[##_article_related_rep_link_##]",
+                                title: "[##_article_related_rep_title_##]",
+                                regDate: `[##_article_related_rep_date_##]`,
+                                thumbnail:
+                                    "<s_article_related_rep_thumbnail>[##_article_related_rep_thumbnail_link_##]</s_article_related_rep_thumbnail>",
+                            },
+                            /* </s_article_related_rep> */
+                        ],
+                        /* </s_article_related>
+                        <s_article_prev> */
+                        previous: {
+                            link: "[##_article_prev_link_##]",
+                            title: "[##_article_prev_title_##]",
+                            regDate: `[##_article_prev_date_##]`,
+                            thumbnail:
+                                "<s_article_prev_thumbnail>[##_article_prev_thumbnail_link_##]</s_article_prev_thumbnail>",
+                        },
+                        /* </s_article_prev> <s_article_next> */
+                        next: {
+                            link: "[##_article_next_link_##]",
+                            title: "[##_article_next_title_##]",
+                            regDate: `[##_article_next_date_##]`,
+                            thumbnail:
+                                "<s_article_next_thumbnail>[##_article_next_thumbnail_link_##]</s_article_next_thumbnail>",
+                        },
+                        /* </s_article_next> */
                     },
                     /* </s_permalink_article_rep> */
                     /* <s_notice_rep> */

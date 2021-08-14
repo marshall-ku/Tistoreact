@@ -1,13 +1,17 @@
-interface IListArticleItem {
+interface IListSimpleArticle {
     link: string;
     title: string;
+    regDate: string;
+    thumbnail: string;
+}
+
+interface IListArticleItem extends IListSimpleArticle {
     category: {
         name: string;
         link: string;
     };
-    regDate: string;
     commentsCount: string;
-    thumbnail: string;
+    summary?: string;
 }
 
 interface IComment {
@@ -118,6 +122,12 @@ interface IArticleData extends IBlogEssentialData {
     thumbnail: string;
     commentsCount: string;
     comments: ICommentData;
+    tags: string;
+    more: {
+        related: IListSimpleArticle[];
+        previous: IListSimpleArticle;
+        next: IListSimpleArticle;
+    };
 }
 
 interface INoticeData extends IBlogEssentialData {
